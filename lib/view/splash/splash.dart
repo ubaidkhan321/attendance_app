@@ -1,3 +1,4 @@
+import 'package:attendace_app/resource/constant/assets.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {
@@ -5,6 +6,14 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          Assets.APP_LOGO,
+          width: double.maxFinite,
+          height: 200,
+        ),
+      ),
+    );
   }
 }
